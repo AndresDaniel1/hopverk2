@@ -1,5 +1,15 @@
 # Hópverkefni 2
 
+--
+
+* Setja upp rollup config, sjá póst frá óla á slack
+* Setja upp "static" video categories í index.html skjali, bara HTML + CSS
+* Setja upp javascript virkni sem sækir JSON og les upp categories + video og fyllir inn í forsíðu
+* Setja upp static video í video.html skjali, bara html + css
+
+
+
+
 Verkefnið felst í því að smíða vef lítinn myndbandavef sem nýtir gögn úr JSON skrá.
 
 Gögn skulu lesin úr `videos.json` skjali sem gefið er og engar upplýsingar skulu „harðkóðaðar“ í HTML. Birta skal skilaboð á meðan gögn eru hlaðin. Athugið að ef þetta væri „alvöru“ verkefni værum við með bakenda sem myndi sjá um að skrifa út rétt gögn í HTML í byrjun.
