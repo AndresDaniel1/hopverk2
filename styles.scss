@@ -1,1 +1,8 @@
-import config
+//sækja allt úr scss
+
+@import 'styles/config';
+@import 'styles/controls';
+@import 'styles/global';
+@import 'styles/header';
+@import 'styles/player';
+@import 'styles/video';
