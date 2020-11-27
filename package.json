@@ -8,6 +8,7 @@
     "date-fns": "^2.16.1",
     "leaflet": "^1.7.1",
     "node-sass": "^5.0.0",
+    "sass": "^1.29.0",
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0"
@@ -31,8 +32,8 @@
     "rollup-watch": "rollup -c -w",
     "browser-sync": "browser-sync start --server --files index.html fyrirlestur.html ./dist/styles.css ./dist/bundle.js",
     "stylelint": "stylelint ./src/styles/**/*.scss --syntax scss",
-    "sass": "node-sass --source-map-embed ./src/styles/styles.scss ./dist/styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch --recursive src/styles/styles.scss ./dist/styles.css",
+    "sass": "node-sass --source-map-embed styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
     "test": "concurrently npm:eslint npm:stylelint",
     "dev": "concurrently  npm:sass npm:sass-watch npm:rollup-watch npm:browser-sync"
   },
