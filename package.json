@@ -7,11 +7,9 @@
     "browser-sync": "^2.26.13",
     "date-fns": "^2.16.1",
     "leaflet": "^1.7.1",
+    "lint": "^0.7.0",
     "node-sass": "^5.0.0",
-    "sass": "^1.29.0",
-    "stylelint": "^13.7.2",
-    "stylelint-config-sass-guidelines": "^7.1.0",
-    "stylelint-config-standard": "^20.0.0"
+    "sass": "^1.29.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -24,7 +22,10 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "rollup": "^2.33.3",
-    "rollup-plugin-babel": "^4.4.0"
+    "rollup-plugin-babel": "^4.4.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
   },
   "scripts": {
     "eslint": "eslint ./src/**/*.js",
@@ -35,7 +36,10 @@
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
     "test": "concurrently npm:eslint npm:stylelint",
-    "dev": "concurrently  npm:sass npm:sass-watch npm:rollup-watch npm:browser-sync"
+    "dev": "concurrently  npm:sass npm:sass-watch npm:rollup-watch npm:browser-sync",
+    "lint-css": "stylelint styles.css",
+    "lint-scss": "stylelint styles.scss --syntax scss",
+    "lint": "stylelint styles.css ./**/*.scss"
   },
   "author": "",
   "license": "ISC"
