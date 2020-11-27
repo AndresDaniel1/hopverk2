@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    width: 100%;
+    display: flex;
+
+}
+header .content{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+#thumbnail_list{
+    width: 99%;
+    margin: auto;
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.thumbnail{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+}
